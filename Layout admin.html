@@ -49,18 +49,42 @@
     {
         width: 60px;
         overflow:hidden;
-        background-color: rgb(67, 67, 255);
+        background-color: rgb(67, 255, 224);
         position: fixed;
         transition: 0.5s ease;
         display:flex;
         height:100vh;
         z-index: 3;
     }
-    @media screen and (min-width:601px) and (max-width:900px){
+    #alert
+    {   
+
+        font-size: 50px;
+        font-weight: bolder;
+        display: none;
+    }
+    @media screen and (max-width:900px){
     #menu
     {
     display: none;    
     }
+    #alert
+    {
+        display: block;
+    }
+    table
+    {
+        display: none;
+    }
+    #frmnhapsp
+    {
+        display: none;
+    }
+    .headerad
+    {
+        display:none;
+    }
+
 }
 
 #menu ul li:hover
@@ -164,7 +188,7 @@
                 <li class="icon" id="dangxuat"><i class="fa-solid fa-right-from-bracket"></i><a href="#" onclick="showContent('dangxuat-content')">Đăng xuất</a></li>
             </ul>
         </div>
-
+        
         <div id="home-content" class="content-section"> 
             <div class="headerad">Danh mục sản phẩm</div>
             <div class="selling-products">
@@ -195,6 +219,7 @@
 
 
         <div id="sanpham-content" class="content-section">
+            <div id="alert">Xin chuyển sang máy tính có độ rộng lớn hơn 900px để chỉnh sửa  </div>
             <div class="headerad"> QUẢN LÝ SẢN PHẨM</div>
             <form id="frmnhapsp">
                 <h1 style="color: red; padding-left: 25%"> Thêm sản phẩm </h1>
